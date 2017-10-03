@@ -22,12 +22,19 @@ namespace MvcCore\Ext\Request;
 class Cli extends \MvcCore\Request
 {
 	/**
+	 * MvcCore Extension - Request CLI - version:
+	 * Comparation by PHP function version_compare();
+	 * @see http://php.net/manual/en/function.version-compare.php
+	 */
+	const VERSION = '4.2.0';
+	
+	/**
 	 * Application console mode. TRUE if application is running in console mode (php_sapi_name() == 'cli').
 	 * @var bool
 	 */
 	public $Console		= FALSE;
 
-    /**
+	/**
 	 * Get everytime new instance of http request,
 	 * global variables should be changed and injected here
 	 * to get different request object from currently called real request.
@@ -36,7 +43,7 @@ class Cli extends \MvcCore\Request
 	 * @param array $get
 	 * @param array $post
 	 */
-    public function __construct (array & $server, array & $get, array & $post) {
+	public function __construct (array & $server, array & $get, array & $post) {
 		$this->serverGlobals = $server;
 		$this->getGlobals = $get;
 		$this->postGlobals = $post;
