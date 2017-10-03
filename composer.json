@@ -1,7 +1,7 @@
 {
 	"name": "mvccore/ext-request-cli",
 	"type": "library",
-	"description": "MvcCore Extension - Request - CLI - console arguments parsing into \MvcCore\Request object.",
+	"description": "MvcCore Extension - Request - CLI - console arguments parsing into \\MvcCore\\Request object.",
 	"keywords": [
 		"mvc", 
 		"mvccore", 
