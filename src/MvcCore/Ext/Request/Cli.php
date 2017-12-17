@@ -26,8 +26,8 @@ class Cli extends \MvcCore\Request
 	 * Comparation by PHP function version_compare();
 	 * @see http://php.net/manual/en/function.version-compare.php
 	 */
-	const VERSION = '4.2.0';
-	
+	const VERSION = '4.3.1';
+
 	/**
 	 * Application console mode. TRUE if application is running in console mode (php_sapi_name() == 'cli').
 	 * @var bool
@@ -47,7 +47,7 @@ class Cli extends \MvcCore\Request
 		$this->serverGlobals = $server;
 		$this->getGlobals = $get;
 		$this->postGlobals = $post;
-		
+
 		$this->Console = php_sapi_name() == 'cli';
 
 		$this->initScriptName();
