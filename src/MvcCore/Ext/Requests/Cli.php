@@ -11,7 +11,7 @@
  * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
  */
 
-namespace MvcCore\Ext\Request;
+namespace MvcCore\Ext\Requests;
 
 /**
  * MvcCore Cli Request extension:
