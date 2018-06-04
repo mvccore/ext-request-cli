@@ -93,7 +93,7 @@ class Cli extends \MvcCore\Request
 		} else {
 			$appRootFullPath = substr($indexFilePath, 0, mb_strrpos($indexFilePath, '/'));
 		}
-		$this->AppRoot = str_replace(array('\\', '//'), '/', $appRootFullPath);
+		$this->AppRoot = str_replace(['\\', '//'], '/', $appRootFullPath);
 	}
 
 	/**
@@ -107,7 +107,7 @@ class Cli extends \MvcCore\Request
 	protected function initCliParams () {
 		$rawArgs = $this->serverGlobals['argv'];
 		if (isset($rawArgs[0]) && $rawArgs[0] == $this->indexScriptName) array_shift($rawArgs);
-		$params = array();
+		$params = [];
 		$dash = '-';
 		for ($i = 0, $l = count($rawArgs); $i < $l; $i += 1) {
 			$rawArg = $rawArgs[$i];
@@ -200,7 +200,7 @@ class Cli extends \MvcCore\Request
 	 * @return void
 	 */
 	protected function initCliParamsCleanQuotes (& $params) {
-		$quotChars = array('"', "'", '`');
+		$quotChars = ['"', "'", '`'];
 		foreach ($params as & $value) {
 			foreach ($quotChars as $quotChar) {
 				if (mb_strpos($value, $quotChar) !== 0) continue;
