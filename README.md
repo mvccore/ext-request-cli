@@ -20,5 +20,5 @@ php index.php -c controller-name -a action-name -id 10
 ### PHP application Bootstrap.php
 Put this patching code in very beginning of your application:
 ```php
-\MvcCore::GetInstance()->SetRequestClass(\MvcCore\Ext\Request\Cli::class);
+\MvcCore::GetInstance()->SetRequestClass('\\MvcCore\\Ext\\Request\\Cli');
 ```
