@@ -15,7 +15,7 @@ namespace MvcCore\Ext\Requests;
 
 /**
  * MvcCore Cli Request extension:
- * - linear request url parsing from $_SERVER into local properties describing app root and params
+ * - linear request URL parsing from $_SERVER into local properties describing app root and params
  * - params reading from $_SERVER['argv'] in double dash, single dash or no dash form with or without equal char
  * - params cleaning by developer rules
  */
