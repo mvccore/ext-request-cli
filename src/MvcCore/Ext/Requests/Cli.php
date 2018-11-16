@@ -23,7 +23,7 @@ class Cli extends \MvcCore\Request
 {
 	/**
 	 * MvcCore Extension - Request CLI - version:
-	 * Comparation by PHP function version_compare();
+	 * Comparison by PHP function version_compare();
 	 * @see http://php.net/manual/en/function.version-compare.php
 	 */
 	const VERSION = '4.3.1';
@@ -35,7 +35,7 @@ class Cli extends \MvcCore\Request
 	public $Console		= FALSE;
 
 	/**
-	 * Get everytime new instance of http request,
+	 * Get every time new instance of http request,
 	 * global variables should be changed and injected here
 	 * to get different request object from currently called real request.
 	 *
